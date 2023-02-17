@@ -13,6 +13,7 @@
 int main(void)
 {
 	char c;
+
 	c = 'a';
 
 	/* your code goes there */
@@ -20,7 +21,6 @@ int main(void)
 	{
 		putchar(c);
 		c++;
-		putchar("\n");
 	}
 	return (0);
 }
