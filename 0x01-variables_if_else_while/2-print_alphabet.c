@@ -21,7 +21,8 @@ int main(void)
 	{
 		putchar(c);
 		c++;
+		if (c == 'z')
+			putchar("\n");
 	}
-	print(" ");
 	return (0);
 }
