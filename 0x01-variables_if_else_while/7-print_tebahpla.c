@@ -13,7 +13,8 @@
 int main(void)
 {
 	int a;
-	a = 'z'
+
+	a = 'z';
 
 	while (a >= 'a')
 	{
