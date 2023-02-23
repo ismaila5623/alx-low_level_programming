@@ -1,24 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * FizzBuzz: Fizz-Buzz test
- *
+ * main - Fizz-Buzz test
+ * Return: Always 0 (Success)
  */
 
-void fizz_buzz(void)
+int main(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int i;
+
+	for (i = 1; i <= 100; i++)
 	{
 		if (i == 1)
 			printf("%d", i);
-		else if ((3 * 5) % i == 0)
+		else if (i % (3 * 5) == 0)
 			printf("FizzBuzz");
-		else if (3 % i == 0)
+		else if (i % 3 == 0)
 			printf("Fizz");
-		else if (5 % i == 0)
+		else if (i % 5 == 0)
 			printf("Buzz");
 		else
 			printf("%d", i);
-	_putchar(' ');
+	printf(" ");
 	}
+	printf("\n");
+	return (0);
 }
