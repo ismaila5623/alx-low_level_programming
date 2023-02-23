@@ -2,7 +2,8 @@
 
 /**
  * print_diagonal: prints diagonal line using / char
- *
+ *@n: number of times
+ *Return: diagonal line
  */
 
 void print_diagonal(int n)
@@ -13,12 +14,15 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (int i = 0; i < n; i++)
+		int i;
+		int j;
+
+		for (i = 0; i < n; i++)
 		{
-			for (int j = 0; j <= i; j++)
+			for (j = 0; j <= i; j++)
 			{
 				if (j == i)
-					_putchar('\');
+					_putchar('\\');
 				else
 					_putchar(' ');
 			}
