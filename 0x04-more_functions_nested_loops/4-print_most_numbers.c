@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (; x <= 9; x++)
 	{
-		if (x == 2 || i == 4)
+		if (x == 2 || x == 4)
 			continue;
 		else
 			_putchar(x + '0');
