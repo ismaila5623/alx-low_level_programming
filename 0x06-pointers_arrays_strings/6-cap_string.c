@@ -23,11 +23,13 @@ char *cap_string(char *str)
 				if (str[index] == c)
 				{
 					str[index] = cap;
+					break;
 				}
 				c++;
 				cap++;
 			}
 		}
+		index++;
 	}
 	return (str);
 }
