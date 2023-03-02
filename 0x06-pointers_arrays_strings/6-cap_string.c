@@ -13,11 +13,21 @@ char *cap_string(char *str)
 
 	while (str[index])
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-		if str[index - 1] == ',' || str[index - 1] == ';' || str[index - 1] == '.' || str[index - 1] == '!' || str[index - 1] == '?' || str[index - 1] == '"' || str[index - 1] == '(' || str[index - 1] == ')' || str[index - 1] == '{' || str[index - 1] == '}' || index == 0)
-			str[index] -= 32;
-		index++;
+		if (str[index] >= 'a' || str[index] <= 'z')
+		{
+			char c = 'a';
+			char cap = 'A';
+
+			while (c <= 'z')
+			{
+				if (str[index] == c)
+				{
+					str[index] = cap;
+				}
+				c++;
+				cap++;
+			}
+		}
 	}
 	return (str);
 }
