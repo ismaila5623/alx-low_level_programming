@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - main entry
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (; i < argc; i++)
 		{
-			result = result * argv[i];
+			result = result * atoi(argv[i]);
 		}
 		printf("%d\n", result);
 	}
